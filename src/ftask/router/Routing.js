@@ -222,12 +222,12 @@ const CartApp = () => {
                     padding: " 20px 20px",  }}> 
                 
                   <Button sx={{ marginRight: "5px" }} variant="contained" color="primary" onClick={() => handleDecrease(product.id)}
-                    disabled={product.quantity <= 0}>
+                    >-
                   </Button>
 
                   <Typography variant="body1">{product.quantity}</Typography>
 
-                  <Button sx={{ marginLeft: "5px" }}  variant="contained" color="info" onClick={() => handleAddToCart(product.id)}>
+                  <Button sx={{ marginLeft: "5px" }}  variant="contained" color="info" onClick={() => handleAddToCart(product.id)}>+
                   </Button>
 
                 </div>
